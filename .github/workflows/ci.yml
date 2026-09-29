@@ -3,6 +3,7 @@ on: [push, pull_request]
 jobs:
   test:
     strategy:
+      fail-fast: false
       matrix:
         os: [windows-latest, ubuntu-latest]
         python: ["3.11", "3.12", "3.13"]
@@ -12,6 +13,7 @@ jobs:
       - uses: astral-sh/setup-uv@v6
         with:
           python-version: ${{ matrix.python }}
+          activate-environment: true
       - run: uv pip install torch --index-url https://download.pytorch.org/whl/cpu
       - run: uv pip install -e . pytest ruff
       - run: ruff check laya_windows tests
