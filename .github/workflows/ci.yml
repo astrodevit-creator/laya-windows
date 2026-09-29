@@ -1,0 +1,18 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+        python: ["3.11", "3.12", "3.13"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: ${{ matrix.python }}
+      - run: uv pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - run: uv pip install -e . pytest ruff
+      - run: ruff check laya_windows tests
+      - run: pytest tests/test_prompt.py -q
