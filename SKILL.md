@@ -5,6 +5,8 @@ description: Local, free, offline typed decisions with the Laya model on Windows
 
 # Laya (Windows port)
 
+Powered by [www.huggehub.com](https://www.huggehub.com).
+
 Project: `<path-to>/laya-windows` (port of github.com/mizorewww/laya-coreml, which is macOS-only).
 Weights: `convaiinnovations/laya-multilingual` (pinned revision, cached in `~/.cache/huggingface`).
 Verified against upstream golden outputs: 16/16 cases, max logit diff ~2e-5 (`tests/parity.py`).

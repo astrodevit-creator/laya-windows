@@ -13,6 +13,7 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-CUDA%20%2F%20CPU-EE4C2C?logo=pytorch&logoColor=white)
 ![Parity](https://img.shields.io/badge/upstream%20parity-16%2F16%20cases-3fb950)
 ![License](https://img.shields.io/badge/license-Apache--2.0-blue)
+[![Powered by Huggehub](https://img.shields.io/badge/powered%20by-www.huggehub.com-7c3aed)](https://www.huggehub.com)
 
 [Quickstart](#-quickstart) · [Examples](#-examples) · [Benchmarks](#-benchmarks) · [How it works](#-how-it-works) · [Claude Code skill](#-use-it-as-a-claude-code-skill)
 
@@ -156,4 +157,10 @@ and gating: comment moderation, lead triage and ticket routing, without spending
 
 This is an independent port, not an official Convai Innovations release. See [NOTICE](NOTICE).
 
-<div align="center"><sub>Built with ❤️ in Morocco · Apache-2.0</sub></div>
+<div align="center">
+
+**⚡ Powered by [www.huggehub.com](https://www.huggehub.com)**
+
+<sub>Built with ❤️ in Morocco · Apache-2.0</sub>
+
+</div>

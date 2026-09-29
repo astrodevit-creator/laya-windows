@@ -10,6 +10,10 @@ requires-python = ">=3.11,<3.14"
 license = "Apache-2.0"
 dependencies = ["torch>=2.5", "numpy>=1.26", "tokenizers>=0.21,<1", "huggingface-hub>=0.34", "safetensors>=0.6"]
 
+[project.urls]
+Homepage = "https://www.huggehub.com"
+Repository = "https://github.com/astrodevit-creator/laya-windows"
+
 [project.scripts]
 laya = "laya_windows.cli:main"
 
